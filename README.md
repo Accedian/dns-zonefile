@@ -3,21 +3,21 @@ dns-zonefile
 An [RFC1035 compliant](http://www.ietf.org/rfc/rfc1035.txt) DNS zone file
 parser and generator for Node.js and browser.
 
-# Installation
 
-## Bower Install
-
-`bower install dns-zonefile --save`
-
-## Standalone
-
-`sudo npm install dns-zonefile -g`
-
-## Module
-
-`npm install dns-zonefile`
 
 # Usage
+
+## Accedian Skylight Analytics
+
+This tool has been modified so that a dns zone file can be parsed and then the A records be created in an Accedian Skylight Analytics Deployment using the NetworkAsset POST API. 
+
+This is to enable support for private reverse DNS lookups when a private DNS server isn't available to Skylight Analytics
+
+First Obtain an Authorization token from Skylight Analytics and then use this command.
+```bash
+#Parse a zone file and create Network Assets in a Skylight Analytic Deployment
+node bin/zonefile -p <dns zone file> <skylight tenant url> <skylight auth token>
+```
 
 ## Zone Information
 

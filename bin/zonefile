@@ -23,7 +23,7 @@
         console.log('dns-zonefile version: ', pjson.version);
         console.log('Usage:');
         console.log('   "zonefile [-v|--version]" to show version information.');
-        console.log('   "zonefile -p zonefile.txt" to parse a zonefile to JSON.');
+        console.log('   "zonefile -p zonefile.txt" to parse a zonefile to JSON. Also specify the url and auth_token to create Network Assets in Skylight <url> <auth_token>');
         console.log('   "zonefile -g zonefile.json" to generate a zonefile from JSON.');
         console.log('   "zonefile zonefile.json" to generate a zonefile from JSON if the file name ' +
             '\n     contains ".json", case insensitively, otherwise to parse the file as a zonefile to JSON.');
@@ -37,8 +37,14 @@
     } else if (input[0] === '-p') {
         var src = input[1];
         var options = fs.readFileSync(src, 'utf8');
-        var output = zonefile.parse(options);
-        console.log(JSON.stringify(output));
+        var output;
+        if (input[2]) {
+            console.log('Skylight URL detected. A records will be created/updated in Skylight: ', input[2]);
+            output = zonefile.parse(options, input[2], input[3], input[4])
+        } else {
+           output = zonefile.parse(options);
+        }
+        console.log(output);
     } else {
         var src = input[0];
         var options = fs.readFileSync(src, 'utf8');
@@ -46,7 +52,7 @@
             var output = zonefile.generate(JSON.parse(options));
         } else {
             var output = zonefile.parse(options);
-            output = JSON.stringify(output);
+            // output = JSON.stringify(output);
         }
         console.log(output);
     }

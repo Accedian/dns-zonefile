@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/bin/zonefile",
+            "args": ["-p", "${workspaceFolder}/blackrock_dns.txt", "https://blackrock.dhus-east4.analytics.accedian.io", "893edffa-cd60-4709-ac43-846db1cb4c72", "MTYwMzQ2MjYzNXxTV0pORDFwcmhMRWNjYlhTaHB3Wl9wbkFpdUtldVNSNG1QbzliTWNieDdPc2ctSVNuSXlsaWNwNFFZbDltUFFES0p4VFItamc2RkRCd1dJeUpXYjJETW9XcGx4RXc5LTE1a1VGQ2NHMnJ4b0xMSnZGRWNJbGRCbHVvVkhfcm1XMG5OM3ZPLXlzVHBmMHpLdHp3aWxTVzZXVER2Mi1lYXd6clRmaGVBSEJYYXBSZ0ZUYnpHTEp4eTR6YlNEbGVpeEZ1YnBISFgzVVhkRnhkdklSRmtTMWRSV29ZLTkxNkRiTkh6RGNzd3lBTTBlVlh1QjFqMW44aUtvTE11RHl3eVc4Mk9LSzRDUno2QkpzOU14WEFhSkVSNEltUkV2SzQzLVc4S1RXcW9qSDR5SEROWE1sZUdiNlRIN0NhWWpXY0Q4bVBpV0RqT1pZNFJiUW4tZDFEamdnUVJfWmt2LVRJQUFmUmhERlhuZkpLcGN1YnFjQ3FESy05YzdmNkRTZ2hqMWZhUG1JX3FTc21ERlJnMVB2NVM1WW9taFl5TXVvTkVhSmdCRW5WZ0pWMWxXUzBRazZ2OXpXTU56b0s3Z3MxSVVRNHYtNUNzdUpUSGNEdUI4OHVQbEtoTkhjNGZjUUw5YWxHYkdzTXVSMTdRak4tcW45Q2ZNejF1MFJtWjFycmVjUWVtdWF3aFZmaFMyRk5DQ1FrMmRoTEZadjd4aWVJMjJnd1pnbGpZMUpGYzFGdHVrZWVlemdnTC1ldHduU2VwemxaaWlPWExuSURyWktDQ3FTblRNQ2RaQ3dJWEdtOEpyZ2xob0hOaG81SThTWVYtbFE3WHh0QzZEVDlkQk14bDI4RjNiMDVpLTJmSkdlZFM3UFE3SF9xaEVPRUFyZ01zU1REVEVMbVhzRUZTbFU1Y2lQNHlOSHk4enNtTzBXV2NEMDNBOXJ4bGoyRVdjbnVsbXR6S2hta0kzZXN2Y05oVmhabnlRekJIdXh5T0NtZXdSNkhpM01haWhhZ2NEMVVyMGZMak5GcE9IV3c3d2ZiZUk9fJoUE8hWHCCQdyQ0oAz9aQ0sXiS-HB1fvSajJahuy8sI"]
+        }
+    ]
+}
